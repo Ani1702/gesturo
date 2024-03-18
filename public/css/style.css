@@ -1,0 +1,232 @@
+*{
+    font-family: 'Kadwa', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Landing.ejs */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+html, body {
+    height: 100%;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 0em;
+    font-family: Imprima;
+}
+
+body {
+    background: rgba(217, 217, 217, 1);
+}
+
+.contentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 95%;
+    height: 90%;
+    border-radius: 1.5rem;
+    margin: auto;
+    background: radial-gradient(72.45% 74.51% at 20.93% 27.55%, rgba(231, 238, 242, 0.82) 1.73%, rgba(134, 194, 213, 0.82) 100%);
+    position: relative;
+    padding-left: 2%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.words, .description {
+    /* font-size: 1.3rem; */
+    /* line-height: 1.7rem; */
+    color: rgba(41, 96, 144, 1);
+}
+
+.words {
+    justify-self: flex-start;
+    margin-bottom: 9rem;
+    position: absolute;
+    top: 8rem;
+}
+
+.bridgeGap {
+    font-family: Kadwa;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 8rem;
+    text-align: center;
+    margin-left: -2.5rem;
+    color: rgba(16, 49, 100, 1);
+}
+
+.speakLouderWith, .everyGesture {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: Kadwa;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 5rem;
+    margin-left: 1.5rem;
+    color: rgba(16, 49, 100, 1);
+}
+
+.speakLouderWith .speak {
+    text-align: center;
+    padding-left: 1.5rem;
+    margin-top: -3rem;
+}
+
+.speakLouderWith .louder {
+    align-self: center;
+    margin-top: -2.8rem;
+    padding-left: 1rem;
+}
+
+.speakLouderWith .with {
+    font-weight: 0;
+    text-align: center;
+    margin-top: -3rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.everyGesture {
+    margin-top: -2rem;
+}
+
+.everyGesture .every {
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+
+.everyGesture .gesture {
+    font-size: 3.5rem;
+    margin-top: 0.2rem;
+}
+
+.description {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: left;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 2.2rem;
+    right: 2rem;
+    width: 24rem;
+    height: 25rem;
+    margin: 0.8rem;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 27%;
+    height: 18%;
+    background: rgba(217, 217, 217, 1);
+    border-top-left-radius: 1.5rem;
+    display: flex;
+    align-self: flex-end !important;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0;
+    padding-bottom: 0.8rem;
+    margin-right: 0;
+    gap: 1rem;
+}
+
+a button {
+    margin-left: 0;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 1.25rem;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.5rem;
+}
+
+#getStarted {
+    background-color: rgba(185, 160, 255, 1);
+    color: rgba(85, 77, 180, 1);
+}
+
+#login {
+    background-color: rgba(149, 198, 213, 1);
+    color: rgba(70, 115, 89, 1);
+}
+
+.arrowBox {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    align-self: flex-end;
+}
+
+#getStarted .arrowBox {
+    color: rgba(74, 60, 229, 1);
+    border: 0.095rem solid rgba(74, 60, 229, 1);
+}
+
+#login .arrowBox {
+    color: rgba(70, 115, 89, 1);
+    border: 0.095rem solid rgba(70, 115, 89, 1);
+}
+
+button p {
+    width: 3rem;
+    height: 1.5rem;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+/* 
+button:hover {
+    box-shadow: 4px 4px 4px 0px yellow;
+} */
+
+/* animation styling */
+
+#contentWrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+}
+
+#main {
+    position: relative;
+    height: 90%;
+    width: 100%;
+    background: linear-gradient(179.9deg, #FFFFFF 10.76%, #F1F6FB 16.07%, #99BFE1 54.55%, #619CD2 81.09%, #4C8FCC 93.04%);
+}
+
+.logoutNum1 {
+    position: absolute;
+    top: 1.5rem;
+}

@@ -1,0 +1,76 @@
+<% layout("/layouts/boilerplate") %>
+
+
+
+    <body>
+        <div class="contentWrapper">
+            <main>
+                <div class="logoutNum1 user-btn ms-auto">
+                    <% if(currUser){%>
+                        <a href="/logout"><div class="btn btn-outline-dark ">Logout</div></a>
+                        <%}%>
+                </div>
+                <div class="words">
+                    <div class="bridgeGap">
+                        Bridge Gaps,
+                    </div>
+                    <div class="speakLouderWith">
+                        <div class="speak">Speak</div>
+                        <div class="louder">Louder</div>
+                        <div class="with">with</div>
+                    </div>
+                    <div class="everyGesture">
+                        <div class="every">every</div>
+                        <div class="gesture">Gesture</div>
+                    </div>
+                </div>
+                <img src="/images/logo1.png" alt="" class="logo">
+                <pre class="description" id="animatedText">
+    Welcome to Gesturo: Where Every Gesture Speaks Volumes. 
+    Dive into the world of sign language, connect with our 
+    community, and embark on a journey of learning and 
+    empowerment. Join us in embracing the language of hands 
+    today</pre>
+
+                <% if(!currUser){%>
+                <div class="container">
+                    <a href="">
+                        <button type="submit" id="getStarted">
+                            <p>Get Started</p>
+                            <div class="arrowBox"><b>→</b></div>
+                        </button>
+                    </a>
+                    <a href="/login">
+                        <button type="submit" id="login">
+                            <p>Login</p>
+                            <div class="arrowBox"><b>→</b></div>
+                        </button>
+                    </a>
+                </div>
+                <%}else{%>
+
+
+                <div class="container">
+                    <a href="/learn">
+                        <button type="submit" id="getStarted">
+                            <p>Learn</p>
+                            <div class="arrowBox"><b>→</b></div>
+                        </button>
+                    </a>
+                    <a href="/user/<%=currUser.id%>">
+                        <button type="submit" id="login">
+                            <p>Play</p>
+                            <div class="arrowBox"><b>→</b></div>
+                        </button>
+                    </a>
+                </div>
+                <%}%>
+
+            </main>
+        </div>
+        <script src="/js/app.js"></script>
+    </body>
+    
+</div>
+
+

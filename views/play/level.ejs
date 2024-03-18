@@ -1,0 +1,13 @@
+<% layout("/layouts/boilerplate")%>
+<link rel="stylesheet" href="/css/level.css">
+<%for(level of levels){ %>
+    <div class="level">        
+        <a href="/level/<%=level.id%>/question/<%=level.questions[0]._id%>"><p>Level - <%=level.number%></p>
+        <p><%=level.title%></p></a>
+     
+    </div>
+<%}%>
+
+
+
+
